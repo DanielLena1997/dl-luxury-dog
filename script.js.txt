@@ -1,0 +1,22 @@
+// Open the sidebar menu
+function openMenu() {
+    document.getElementById("sidebar").style.width = "250px";
+}
+
+// Close the sidebar menu
+function closeMenu() {
+    document.getElementById("sidebar").style.width = "0";
+}
+
+// Like functionality
+function likeItem() {
+    alert("Item liked!");
+}
+
+// Count store bag items (just a simple example)
+let bagCount = 0;
+
+document.getElementById("store-bag").addEventListener("click", function() {
+    bagCount++;
+    document.getElementById("bag-count").innerText = bagCount;
+});
