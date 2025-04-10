@@ -7,9 +7,10 @@
 
 /* Body */
 body {
-    font-family: 'Georgia', serif;
-    background-color: #f7f1e1;  /* Light beige background */
-    color: #2e2e2e;  /* Dark grey text */
+    font-family: 'Garamond', serif;
+    background-color: #f7f1e1;  /* Warm beige background */
+    color: #2e2e2e;  /* Dark gray text */
+    line-height: 1.6;
 }
 
 /* Header */
@@ -17,13 +18,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 30px 40px;
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header .logo h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Didot', serif;
     font-size: 36px;
     color: #a67c52;  /* Goldish color */
 }
@@ -40,7 +41,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 header nav ul li a {
@@ -55,22 +56,29 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #a67c52;
-    border-bottom: 2px solid #a67c52;  /* Gold underline */
+    border-bottom: 2px solid #a67c52;
 }
 
-/* Hero section */
+/* Hero Section */
 .hero {
-    background-image: url('path-to-your-hero-image.jpg');
+    background-image: url('path-to-hero-image.jpg'); /* Marble or elegant texture */
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
     text-align: center;
     color: #fff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.3); /* Slight overlay for readability */
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .hero h2 {
     font-size: 50px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Didot', serif;
     margin-bottom: 20px;
 }
 
@@ -78,7 +86,7 @@ header nav ul li a:hover {
     font-size: 20px;
 }
 
-/* Product section */
+/* Product Section */
 .products {
     padding: 50px 40px;
     text-align: center;
@@ -86,7 +94,7 @@ header nav ul li a:hover {
 
 .products h2 {
     font-size: 36px;
-    font-family: 'Georgia', serif;
+    font-family: 'Garamond', serif;
     margin-bottom: 40px;
     color: #a67c52;
 }
@@ -103,6 +111,7 @@ header nav ul li a:hover {
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    border-radius: 10px;
 }
 
 .product img {
@@ -132,4 +141,25 @@ footer {
 footer p {
     font-size: 14px;
     color: #a67c52;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .product-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        margin-bottom: 20px;
+    }
 }
