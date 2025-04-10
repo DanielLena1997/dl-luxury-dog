@@ -7,41 +7,65 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Left Sidebar Menu -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="closeMenu()">×</button>
+        <ul>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#size-chart">Size Chart</a></li>
+        </ul>
+    </div>
+
     <header>
         <h1>Welcome to D&L Luxury Dog Accessories</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <button class="open-btn" onclick="openMenu()">&#128394;</button> <!-- Key Button -->
+        <input type="text" id="search-bar" placeholder="Search...">
+        <div id="store-bag">
+            <span id="bag-count">0</span> items in bag
+        </div>
     </header>
-    
-    <!-- About Us Section -->
+
+    <section id="shop">
+        <h2>Our Products</h2>
+        <div class="product">
+            <img src="images/dog-collar.jpg" alt="Luxury Dog Collar">
+            <h3>Luxury Leather Dog Collar</h3>
+            <button class="like-btn" onclick="likeItem()">❤️ Like</button>
+        </div>
+        <div class="product">
+            <img src="images/dog-leash.jpg" alt="Luxury Dog Leash">
+            <h3>Luxury Leather Dog Leash</h3>
+            <button class="like-btn" onclick="likeItem()">❤️ Like</button>
+        </div>
+    </section>
+
     <section id="about">
         <h2>About Us</h2>
-        <p>We specialize in luxury leather accessories for your furry friends, including high-quality dog collars, leashes, and carriers made from the finest leather.</p>
+        <p>At D&L, we offer luxury leather accessories for your furry friends. We pride ourselves on crafting beautiful and durable products.</p>
     </section>
-    
-    <!-- Products Section -->
-    <section id="products">
-        <h2>Our Products</h2>
-        <ul>
-            <li>Leather Dog Collars</li>
-            <li>Leather Dog Leashes</li>
-            <li>Leather Dog Carriers</li>
-        </ul>
+
+    <section id="size-chart">
+        <h2>Size Chart</h2>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Size</th>
+                <th>Dimensions</th>
+            </tr>
+            <tr>
+                <td>Dog Collar</td>
+                <td>Small, Medium, Large</td>
+                <td>30-40 cm</td>
+            </tr>
+        </table>
     </section>
-    
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email us at <a href="mailto:info@dlaccessories.com">info@dlaccessories.com</a></p>
-    </section>
-    
+
     <footer>
         <p>&copy; 2025 D&L Luxury Dog Accessories. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
